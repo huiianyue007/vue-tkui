@@ -1,0 +1,22 @@
+@import '../../sass/variables';
+
+.tkui-list-picker{
+  cursor: pointer;
+}
+.picker-wraper{
+  background-color: white;
+  width: 100%;
+  .picker-action{
+    padding-top: $gutter;
+    padding-bottom: $gutter;
+    padding-left: $gutter-max;
+    padding-right: $gutter-max;
+    border-bottom: 1px solid $border-color;
+    .action-button{
+      font-size: $subhead-font-size;
+      color: $primary-color;
+      padding: $gutter;
+      cursor: pointer;
+    }
+  }
+}

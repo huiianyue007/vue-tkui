@@ -1,0 +1,262 @@
+@import '../../sass/variables';
+
+$button-height: 36px !default;
+$button-height-big: 48px !default;
+$button-height-small: 32px !default;
+$button-min-width: 88px !default;
+$button-min-width-big: 112px !default;
+$button-min-width-small: 68px !default;
+$button-padding: 16px !default;
+$button-padding-big: 18px !default;
+$button-padding-small: 14px !default;
+$button-font-size: $font-size !default;
+$button-font-size-big: $title-font-size !default;
+$button-font-size-small: $caption-font-size !default;
+$button-gutter: $gutter !default;
+$button-border-radius: 2px !default;
+$button-icon-size: $icon-size !default;
+$button-icon-size-big: $icon-size-big !default;
+$button-icon-size-small: $icon-size-small !default;
+
+.tkui-button{
+  max-width: 100%;
+  overflow: hidden;
+  min-width: $button-min-width;
+  height: $button-height;
+  margin: 4px $button-gutter;
+  padding: 0 $button-padding;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  border-radius: $button-border-radius;
+  color: $font-color;
+  font-family: inherit;
+  font-size: $button-font-size;
+  vertical-align: middle;
+
+  .tkui-button-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+
+    svg{
+      height: $button-font-size;
+    }
+  }
+
+  &:not(.icon) svg{
+    width: auto;
+    margin-right: 4px;
+  }
+
+  &.big{
+    min-width: $button-min-width-big;
+    height: $button-height-big;
+    padding: 0 $button-padding-big;
+    font-size: $button-font-size-big;
+    &.icon{
+      width: $button-height-big;
+      height: $button-height-big;
+
+       svg{
+         width: $button-icon-size-big;
+         height: $button-icon-size-big;
+       }
+    }
+    & svg{
+      height: $button-font-size-big;
+    }
+  }
+
+  &.small{
+    min-width: $button-min-width-small;
+    height: $button-height-small;
+    padding: 0 $button-padding-small;
+    font-size: $button-font-size-small;
+    &.icon{
+      width: $button-height-small;
+      height: $button-height-small;
+
+      svg{
+        width: $button-icon-size-small;
+        height: $button-icon-size-small;
+      }
+    }
+    & svg{
+      width: auto;
+      height: $button-font-size-small;
+    }
+  }
+
+  &.rounded{
+    border-radius: 1000px;
+  }
+  &.border{
+    border:1px solid $font-color;
+  }
+  &.raised{
+    background-color:rgba(0,0,0,.06);
+    border:1px solid transparent;
+  }
+  &:hover{
+    background-color:rgba(0,0,0,.09)
+  }
+  &:active,
+  &.active{
+    outline: 0;
+    box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.18) !important;
+    background-color:rgba(0,0,0,.12)
+  }
+
+  &.icon{
+    padding: 0 !important;
+    width: $button-height;
+    min-width: 0 !important;
+    height:$button-height;
+    border-radius: 50% !important;
+    margin: 4px $button-gutter;
+    & svg{
+      max-width: 100%;
+      max-height: 100%;
+      line-height: 100%;
+      vertical-align: inherit;
+      height: $button-icon-size;
+      width: $button-icon-size;
+      color: $font-color;
+    }
+  }
+  &.disabled,
+  &:disabled{
+    color: $font-color !important;
+    cursor: default;
+    opacity: .45!important;
+    background-image: none!important;
+    box-shadow: none!important;
+    pointer-events: none!important;
+    &.border{
+      border-color: $font-color !important;
+    }
+    &.raised{
+      background-color:rgba(0,0,0,.12) !important;
+    }
+    &.icon svg{
+      color: $font-color !important;
+    }
+  }
+
+  &.block{
+    display: block;
+    width: 100%;
+  }
+
+  &.primary{
+    color: $primary-color;
+    &.icon svg{
+      color: $primary-color;
+    }
+    &.border{
+      border-color: $primary-color;
+      &:hover{
+        background-color: $primary-color;
+        color:white;
+      }
+      &.active{
+        background-color:$primary-color-dark;
+        color:white;
+        &.icon svg{
+          color: white;
+        }
+      }
+    }
+    &.raised{
+      background-color: $primary-color;
+      color:white;
+      &:hover{
+        box-shadow:inset 0 0 0 1000px rgba(0, 0 ,0 ,0.08);
+      }
+      &:active,
+      &.active{
+        background-color:$primary-color-dark;
+      }
+      &.icon svg{
+        color: white;
+      }
+    }
+  }
+  &.accent{
+    color: $accent-color;
+    &.icon svg{
+      color: $accent-color;
+    }
+    &.border{
+      border-color: $accent-color;
+      &:hover{
+        background-color: $accent-color;
+        color:white;
+      }
+      &.active{
+        background-color:$accent-color-dark;
+        color:white;
+        &.icon svg{
+          color: white;
+        }
+      }
+    }
+    &.raised{
+      background-color: $accent-color;
+      color:white;
+      &:hover{
+        box-shadow:inset 0 0 0 1000px rgba(0, 0 ,0 ,0.08);
+      }
+      &:active,
+      &.active{
+        background-color:$accent-color-dark;
+      }
+      &.icon svg{
+        color: white;
+      }
+    }
+  }
+  &.danger{
+    color: $danger-color;
+    &.icon svg{
+      color: $danger-color;
+    }
+    &.border{
+      border-color: $danger-color;
+      &:hover{
+        background-color: $danger-color;
+        color:white;
+      }
+      &.active{
+        background-color:$danger-color-dark;
+        color:white;
+        &.icon svg{
+          color: white;
+        }
+      }
+    }
+    &.raised{
+      background-color: $danger-color;
+      color:white;
+      &:hover{
+        box-shadow:inset 0 0 0 1000px rgba(0, 0 ,0 ,0.08);
+      }
+      &:active,
+      &.active{
+        background-color:$danger-color-dark;
+      }
+      &.icon svg{
+        color: white;
+      }
+    }
+  }
+}

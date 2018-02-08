@@ -1,0 +1,222 @@
+@import '../../sass/variables';
+$disable-color: #bdbdbd;
+$disable-color-light: rgba(0,0,0,0.12);
+.tkui-toggle{
+  position: relative;
+  height: 24px;
+  line-height: 24px;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  &.disable{
+    pointer-events: none;
+  }
+  .radio,
+  .checkbox{
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #c8ccd4;
+    vertical-align: middle;
+    transition: background 0.1s ease;
+    display: inline-block;
+
+    &:after{
+      content: '';
+      position: absolute;
+      opacity: 0;
+      transform: rotate(45deg) scale(0);
+      transition: all 0.3s ease;
+    }
+  }
+  .checkbox{
+    border-radius: 3px;
+    &:after{
+      top: 1px;
+      left: 5px;
+      width: 5px;
+      height: 11px;
+      border-right: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+    }
+  }
+  .radio{
+    border-radius: 100px;
+    &:after{
+      top: 4px;
+      left: 4px;
+      width: 6px;
+      height: 6px;
+      background: white;
+      border-radius: 100px;
+    }
+  }
+  &.checked {
+    .radio,
+    .checkbox{
+      border-color: transparent;
+      background: $primary-color;
+    }
+    .radio:after,
+    .checkbox:after{
+      opacity: 1;
+      transform: rotate(45deg) scale(1);
+    }
+    &.disable{
+      .radio,
+      .checkbox{
+        background: $disable-color;
+      }
+    }
+  }
+  .switch {
+    outline: 0;
+    display: block;
+    width: 48px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    background: #f0f0f0;
+    border-radius: 2em;
+    padding: 2px;
+    transition: all .4s ease;
+    &:after, &:before {
+      position: relative;
+      display: block;
+      content: "";
+      width: 50%;
+      height: 100%;
+    }
+    &:after {
+      left: 0;
+      border-radius: 50%;
+      background: #fff;
+      transition: all .2s ease;
+    }
+    &:before {
+      display: none;
+    }
+  }
+  &.checked{
+    .switch{
+      background: $primary-color;
+    }
+    .switch:after {
+      left: 50%;
+    }
+    &.disable{
+      .switch{
+        background: $disable-color;
+      }
+    }
+  }
+  .material {
+    outline: 0;
+    display: block;
+    width: 34px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    transition: all .4s ease;
+    &:before {
+      content: " ";
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      left: 0;
+      top: 2px;
+      background: #fafafa;
+      box-shadow: 0 1px 3px rgba(0,0,0,.2), 0 1px 1px rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+      transition: all .2s ease;
+      position: absolute;
+      z-index: 1;
+    }
+    &:after {
+      content: " ";
+      position: absolute;
+      border-radius: 8px;
+      width: 34px;
+      height: 16px;
+      background: #666;
+      transition: all .2s ease;
+      top: 4px;
+    }
+  }
+  &.checked{
+    .material:before{
+      left: 50%;
+      background: $primary-color;
+    }
+    .material:after {
+      background-color: $primary-color-light;
+    }
+    &.disable{
+      .material:before{
+        background: $disable-color;
+      }
+    }
+  }
+  &.disable{
+    .material:after {
+      background-color: $disable-color-light;
+    }
+  }
+}
+$tcon-size: 24px !default;
+
+.tcon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: $tcon-size;
+  width: $tcon-size;
+}
+
+.tcon-remove {
+  height: $tcon-size;
+  position: relative;
+  transform: scale(.75);
+  width: $tcon-size;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    height: 12%;
+    width: 95%;
+    position: absolute;
+    top: 25%;
+    left: -16%;
+    transition: .3s;
+    background: $primary-color;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+.checked .tcon-remove{
+  &::before {
+    transform: rotate(-135deg) translate(5%, -10%);
+    top: 30%;
+    width: 40%;
+  }
+  &::after {
+    transform: rotate(-45deg) translate(20%, 10%);
+    top: 30%;
+    width: 100%;
+  }
+}
+.disable{
+  .tcon::before,
+  .tcon::after{
+    background: $disable-color;
+  }
+}

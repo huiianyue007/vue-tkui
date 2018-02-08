@@ -1,0 +1,119 @@
+[
+  {
+    "name": "tag-font-color",
+    "description": "标签字体颜色",
+    "type": "color",
+    "inherit": [
+      "font-color"
+    ]
+  },
+  {
+    "name": "tag-color",
+    "description": "标签颜色",
+    "type": "color",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "tag-border-radius",
+    "description": "标签圆角角度",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "tag-gutter",
+    "description": "标签间距",
+    "type": "size",
+    "inherit": [
+      "gutter"
+    ]
+  },
+  {
+    "name": "tag-font-size",
+    "description": "标签字号",
+    "type": "size",
+    "inherit": [
+      "font-size"
+    ]
+  },
+  {
+    "name": "tag-min-width",
+    "description": "标签最小宽度",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "tag-padding-y",
+    "description": "标签垂直内边距",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "tag-padding-x",
+    "description": "标签水平内边距",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "tag-font-size-small",
+    "description": "小号标签字号",
+    "type": "size",
+    "inherit": [
+      "caption-font-size"
+    ]
+  },
+  {
+    "name": "tag-min-width-small",
+    "description": "小号标签最小宽度",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "tag-padding-y-small",
+    "description": "小号标签垂直内边距",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "tag-padding-x-small",
+    "description": "小号标签水平内边距",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "tag-font-size-big",
+    "description": "大号标签字号",
+    "type": "size",
+    "inherit": [
+      "title-font-size"
+    ]
+  },
+  {
+    "name": "tag-min-width-big",
+    "description": "大号标签最小宽度",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "tag-padding-y-big",
+    "description": "大号标签垂直内边距",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "tag-padding-x-big",
+    "description": "大号标签水平内边距",
+    "type": "size",
+    "inherit": [
+    ]
+  }
+]

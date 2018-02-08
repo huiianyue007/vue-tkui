@@ -1,0 +1,40 @@
+[
+  {
+    "name": "header-height",
+    "description": "头部导航高度",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "header-color",
+    "description": "头部文字颜色",
+    "type": "color",
+    "inherit": [
+      "font-color"
+    ]
+  },
+  {
+    "name": "header-background-color",
+    "description": "头部导航背景颜色",
+    "type": "color",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "header-title-size",
+    "description": "头部导航文字大小",
+    "type": "size",
+    "inherit": [
+      "title-font-size"
+    ]
+  },
+  {
+    "name": "header-gutter",
+    "description": "头部导航左右间距",
+    "type": "size",
+    "inherit": [
+      "gutter"
+    ]
+  }
+]

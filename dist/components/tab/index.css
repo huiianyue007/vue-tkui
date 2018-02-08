@@ -1,0 +1,43 @@
+/*!
+* Vue Tkui
+*/.tkui-tab-ink-bar{position:absolute;height:2px;bottom:0;left:0;background-color:#04be02;text-align:center}.tkui-tab-ink-bar .tkui-tab-transition-forward{transition:right .3s cubic-bezier(.35,0,.25,1),left .3s cubic-bezier(.35,0,.25,1) .09s}.tkui-tab-ink-bar .tkui-tab-transition-backward{transition:right .3s cubic-bezier(.35,0,.25,1) .09s,left .3s cubic-bezier(.35,0,.25,1)}.tkui-tab{display:-ms-flexbox;display:flex;background-color:#fff;height:44px;position:relative}.tkui-tab button{padding:0;border:0;outline:0;background:0 0;-webkit-appearance:none;-moz-appearance:none;appearance:none}.tkui-tab .tkui-tab-item{display:block;-ms-flex:1;flex:1;width:100%;height:100%;box-sizing:border-box;background:linear-gradient(180deg,#e5e5e5,#e5e5e5,hsla(0,0%,90%,0)) 0 100% no-repeat;background-size:100% 1px;font-size:14px;text-align:center;line-height:44px;color:#666}.tkui-tab .tkui-tab-item.tkui-tab-selected{color:#04be02;border-bottom:3px solid #04be02}.tkui-tab .tkui-tab-item.tkui-tab-disabled{color:#ddd}.tkui-tab.tkui-tab-no-animate .tkui-tab-item.tkui-tab-selected{background:0 0}.tkui-tab-bar-inner{display:block;background-color:#04be02;margin:auto;height:100%;transition:width .3s cubic-bezier(.35,0,.25,1)}  outline: 0;
+  background: 0 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.tkui-tab .tkui-tab-item {
+  display: block;
+  -ms-flex: 1;
+      flex: 1;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #e5e5e5, #e5e5e5, rgba(229, 229, 229, 0)) bottom left no-repeat;
+  background-size: 100% 1px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 44px;
+  color: #666;
+}
+.tkui-tab .tkui-tab-item.tkui-tab-selected {
+  color: #04BE02;
+  border-bottom: 3px solid #04BE02;
+}
+.tkui-tab .tkui-tab-item.tkui-tab-disabled {
+  color: #ddd;
+}
+.tkui-tab.tkui-tab-no-animate .tkui-tab-item.tkui-tab-selected {
+  background: 0 0;
+}
+
+/** when=prop:custom-bar-width **/
+.tkui-tab-bar-inner {
+  display: block;
+  background-color: #04BE02;
+  margin: auto;
+  height: 100%;
+  transition: width 0.3s cubic-bezier(0.35, 0, 0.25, 1);
+}
+
+/*# sourceMappingURL=index.css.map*/

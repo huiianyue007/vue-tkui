@@ -1,0 +1,51 @@
+@import '../../sass/variables';
+
+$dialog-width: 280px !default;
+$dialog-border-radius: 10px !default;
+$dialog-padding: 10px !default;
+$dialog-button-height: 46px !default;
+$dialog-body-min-height: 92px !default;
+$dialog-button-font-size: $font-size !default;
+
+.tkui-dialog{
+  width: $dialog-width;
+  max-width: 100%;
+  background-color: white;
+  border-radius: $dialog-border-radius;
+  overflow: hidden;
+  .tkui-dialog-body{
+    padding: $dialog-padding;
+    min-height: $dialog-body-min-height;
+
+    &.center{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .tkui-dialog-action{
+    border-top: 1px solid $border-color;
+    display: flex;
+    .tkui-dialog-button{
+      flex: 1;
+      border: none;
+      border-right: 1px solid $border-color;
+      background-color: transparent;
+      height: $dialog-button-height;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: $dialog-button-font-size;
+      outline: 0;
+
+      &:active{
+        box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.12) !important;
+        background-color:rgba(0,0,0,.08)
+      }
+      &:last-child{
+        border-right: none;
+      }
+    }
+  }
+}

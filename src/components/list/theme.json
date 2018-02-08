@@ -1,0 +1,76 @@
+[
+  {
+    "name": "list-height",
+    "description": "列表单行高度",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "list-height-small",
+    "description": "小号列表单行高度",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "list-height-big",
+    "description": "大号列表单行高度",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "list-background-color",
+    "description": "列表背景色",
+    "type": "color",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "list-hover-background-color",
+    "description": "鼠标悬停时背景颜色",
+    "type": "color",
+    "inherit": [
+      "list-background-color"
+    ]
+  },
+  {
+    "name": "list-hover-shadow",
+    "description": "鼠标悬停时阴影颜色",
+    "type": "color",
+    "inherit": [
+      "hover-shadow"
+    ]
+  },
+  {
+    "name": "list-gutter",
+    "description": "列表分栏间距",
+    "type": "size",
+    "inherit": [
+      "gutter"
+    ]
+  },
+  {
+    "name": "list-border-color",
+    "description": "列表边框颜色",
+    "type": "color",
+    "inherit": [
+      "border-color"
+    ]
+  },
+  {
+    "name": "list-row-padding",
+    "description": "列表单行左右边距",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "list-row-padding-y",
+    "description": "列表单行上下边距",
+    "type": "size",
+    "inherit": [
+    ]
+  }
+]

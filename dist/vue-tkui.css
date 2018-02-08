@@ -1,0 +1,427 @@
+/**
+* Color
+*/
+/**
+* Gutter
+*/
+/**
+* Typography
+*/
+/**
+* Icon
+*/
+/**
+* actionsheet
+*/
+/**
+* datetime
+*/
+/**
+* tabbar
+*/
+/**
+* tab
+*/
+/**
+* dialog
+*/
+/**
+* x-number
+*/
+/**
+* checkbox
+*/
+/**
+* check-icon
+*/
+/**
+* Cell
+*/
+/**
+* Mask
+*/
+/**
+* Range
+*/
+/**
+* Tabbar
+*/
+/**
+* Timeline
+*/
+/**
+* Switch
+*/
+/**
+* Button
+*/
+/**
+* swipeout
+*/
+/**
+* Cell
+*/
+/**
+* Badge
+*/
+/**
+* Popover
+*/
+/**
+* Button tab
+*/
+/* alias */
+/**
+* Swiper
+*/
+/**
+* checklist
+*/
+/**
+* popup-picker
+*/
+/**
+* popup
+*/
+/**
+* form-preview
+*/
+/**
+* load-more
+*/
+/**
+* sticky
+*/
+/**
+* group
+*/
+/**
+* toast
+*/
+/**
+* icon
+*/
+/**
+* calendar
+*/
+/**
+* search
+*/
+.tkui-slider {
+  overflow: hidden;
+  position: relative;
+}
+.tkui-slider .tkui-indicator-right {
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+}
+.tkui-slider .tkui-indicator-right > a {
+      float: left;
+      margin-left: 6px;
+}
+.tkui-slider .tkui-indicator-right > a .tkui-icon-dot {
+        display: inline-block;
+        vertical-align: middle;
+        width: 6px;
+        height: 6px;
+        border-radius: 3px;
+        background-color: #d0cdd1;
+}
+.tkui-slider .tkui-indicator-right > a .tkui-icon-dot.active {
+        background-color: #04BE02;
+}
+.tkui-slider .tkui-indicator-center {
+    right: 50%;
+    transform: translateX(50%);
+}
+.tkui-slider .tkui-indicator-left {
+    left: 15px;
+    right: auto;
+}
+.tkui-slider .tkui-swiper {
+    overflow: hidden;
+    position: relative;
+}
+.tkui-slider .tkui-swiper .tkui-swiper-item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+}
+.tkui-slider .tkui-swiper .tkui-swiper-item > a {
+        display: block;
+        width: 100%;
+        height: 100%;
+}
+.tkui-slider .tkui-swiper .tkui-swiper-item > a .tkui-img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          background: center center no-repeat;
+          background-size: cover;
+}
+.tkui-slider .tkui-swiper .tkui-swiper-item > a .tkui-swiper-desc {
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          height: 1.4em;
+          font-size: 16px;
+          padding: 20px 50px 12px 13px;
+          margin: 0;
+          background-image: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, 0.7) 100%);
+          color: #fff;
+          text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          word-wrap: normal;
+}
+/**
+* Color
+*/
+/**
+* Gutter
+*/
+/**
+* Typography
+*/
+/**
+* Icon
+*/
+/**
+* actionsheet
+*/
+/**
+* datetime
+*/
+/**
+* tabbar
+*/
+/**
+* tab
+*/
+/**
+* dialog
+*/
+/**
+* x-number
+*/
+/**
+* checkbox
+*/
+/**
+* check-icon
+*/
+/**
+* Cell
+*/
+/**
+* Mask
+*/
+/**
+* Range
+*/
+/**
+* Tabbar
+*/
+/**
+* Timeline
+*/
+/**
+* Switch
+*/
+/**
+* Button
+*/
+/**
+* swipeout
+*/
+/**
+* Cell
+*/
+/**
+* Badge
+*/
+/**
+* Popover
+*/
+/**
+* Button tab
+*/
+/* alias */
+/**
+* Swiper
+*/
+/**
+* checklist
+*/
+/**
+* popup-picker
+*/
+/**
+* popup
+*/
+/**
+* form-preview
+*/
+/**
+* load-more
+*/
+/**
+* sticky
+*/
+/**
+* group
+*/
+/**
+* toast
+*/
+/**
+* icon
+*/
+/**
+* calendar
+*/
+/**
+* search
+*/
+.tkui-tab-ink-bar {
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #04BE02;
+  text-align: center;
+}
+.tkui-tab-ink-bar .tkui-tab-transition-forward {
+    transition: right 0.3s cubic-bezier(0.35, 0, 0.25, 1), left 0.3s cubic-bezier(0.35, 0, 0.25, 1) 0.09s;
+}
+.tkui-tab-ink-bar .tkui-tab-transition-backward {
+    transition: right 0.3s cubic-bezier(0.35, 0, 0.25, 1) 0.09s, left 0.3s cubic-bezier(0.35, 0, 0.25, 1);
+}
+.tkui-tab {
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  height: 44px;
+  position: relative;
+}
+.tkui-tab button {
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: 0 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.tkui-tab .tkui-tab-item {
+  display: block;
+  -ms-flex: 1;
+      flex: 1;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #e5e5e5, #e5e5e5, rgba(229, 229, 229, 0)) bottom left no-repeat;
+  background-size: 100% 1px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 44px;
+  color: #666;
+}
+.tkui-tab .tkui-tab-item.tkui-tab-selected {
+  color: #04BE02;
+  border-bottom: 3px solid #04BE02;
+}
+.tkui-tab .tkui-tab-item.tkui-tab-disabled {
+  color: #ddd;
+}
+.tkui-tab.tkui-tab-no-animate .tkui-tab-item.tkui-tab-selected {
+  background: 0 0;
+}
+
+/** when=prop:custom-bar-width **/
+.tkui-tab-bar-inner {
+  display: block;
+  background-color: #04BE02;
+  margin: auto;
+  height: 100%;
+  transition: width 0.3s cubic-bezier(0.35, 0, 0.25, 1);
+}
+
+.tkui-picker{
+  width: 100%;
+}
+.scroller-component {
+  display: block;
+  position: relative;
+  height: 238px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.scroller-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.scroller-mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 3;
+  transform: translateZ(0px);
+  background-image:
+    -webkit-linear-gradient(top, rgba(255,255,255,0.95), rgba(255,255,255,0.6)),
+    -webkit-linear-gradient(bottom, rgba(255,255,255,0.95), rgba(255,255,255,0.6));
+  background-image:
+    linear-gradient(to bottom, rgba(255,255,255,0.95), rgba(255,255,255,0.6)),
+    linear-gradient(to top, rgba(255,255,255,0.95), rgba(255,255,255,0.6));
+  background-position: top, bottom;
+  background-size: 100% 102px;
+  background-repeat: no-repeat;
+}
+
+.scroller-item {
+  text-align: center;
+  font-size: 16px;
+  height: 34px;
+  line-height: 34px;
+  color: #000;
+}
+
+.scroller-indicator {
+  width: 100%;
+  height: 34px;
+  position: absolute;
+  left: 0;
+  top: 102px;
+  z-index: 3;
+  background-image:
+    -webkit-linear-gradient(top, #d0d0d0, #d0d0d0, transparent, transparent),
+    -webkit-linear-gradient(bottom, #d0d0d0, #d0d0d0, transparent, transparent);
+  background-image:
+    linear-gradient(to bottom, #d0d0d0, #d0d0d0, transparent, transparent),
+    linear-gradient(to top, #d0d0d0, #d0d0d0, transparent, transparent);
+  background-position: top, bottom;
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+}
+.scroller-item {
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/*# sourceMappingURL=vue-tkui.css.map*/

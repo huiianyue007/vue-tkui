@@ -1,0 +1,125 @@
+[
+  {
+    "name": "button-height",
+    "description": "按钮高度",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "button-height-big",
+    "description": "大按钮高度",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "button-height-small",
+    "description": "小按钮高度",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "button-min-width",
+    "description": "按钮最小宽度",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "button-min-width-big",
+    "description": "大按钮最小宽度",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "button-min-width-small",
+    "description": "小按钮最小宽度",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "button-padding",
+    "description": "按钮内边距",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "button-padding-big",
+    "description": "大按钮内边距",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "button-padding-small",
+    "description": "小按钮内边距",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "button-font-size",
+    "description": "按钮字体大小",
+    "type": "size",
+    "inherit": [
+      "font-size"
+    ]
+  },
+  {
+    "name": "button-font-size-big",
+    "description": "大按钮字体大小",
+    "type": "size",
+    "inherit": [
+      "title-font-size"
+    ]
+  },
+  {
+    "name": "button-font-size-small",
+    "description": "小按钮字体大小",
+    "type": "size",
+    "inherit": [
+      "caption-font-size"
+    ]
+  },
+  {
+    "name": "button-gutter",
+    "description": "按钮外边距",
+    "type": "size",
+    "inherit": [
+      "gutter"
+    ]
+  },
+  {
+    "name": "button-border-radius",
+    "description": "按钮圆角尺寸",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "button-icon-size",
+    "description": "图标按钮尺寸",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "button-icon-size-big",
+    "description": "大图标按钮尺寸",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "button-icon-size-small",
+    "description": "小图标按钮尺寸",
+    "type": "size",
+    "inherit": [
+    ]
+  }
+]

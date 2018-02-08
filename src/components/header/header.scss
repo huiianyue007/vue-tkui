@@ -1,0 +1,57 @@
+@import '../../sass/variables';
+
+$header-height: 56px !default;
+$header-color: $font-color !default;
+$header-background-color: $white !default;
+$header-title-size: $title-font-size !default;
+$header-gutter: $gutter !default;
+
+.tkui-header {
+  min-height: $header-height;
+  width: 100%;
+  background-color: $header-background-color;
+  display: flex;
+  align-items: center;
+  padding: 0 $header-gutter;
+  color: $header-color;
+
+  & *:not(.no-inherit){
+    color: inherit !important;
+  }
+
+  &>* {
+    line-height: normal;
+  }
+  & .header-title {
+    font-size: $header-title-size;
+    overflow: hidden;
+    flex: 1;
+  }
+  & .left-menu,
+  & .right-menu{
+    & .tkui-button:first-child{
+      margin-left:0;
+    }
+  }
+
+  & .right-menu,
+  & .right-menu>div{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+  }
+  & .tkui-button+.tkui-button {
+    margin-left: 0;
+  }
+
+  &.center{
+    & .header-title{
+      width: 50%;
+      text-align:center;
+    }
+    & .left-menu, & .right-menu{
+      width: 25%;
+    }
+  }
+}
+

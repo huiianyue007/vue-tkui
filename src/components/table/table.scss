@@ -1,0 +1,145 @@
+@import '../../sass/variables';
+
+$table-background-color: white !default;
+$table-hover-background-color: $table-background-color !default;
+$table-hover-shadow: $hover-shadow !default;
+$table-font-size: $font-size !default;
+$table-font-color: $font-color !default;
+$table-cell-padding-x: 12px !default;
+$table-cell-padding-y: 16px !default;
+$table-border-color: $border-color !default;
+$table-header-background-color: $table-background-color !default;
+$table-header-font-weight: 600 !default;
+$table-header-font-color: $table-font-color !default;
+$table-header-font-size: $table-font-size !default;
+$table-header-cell-padding-x: $table-cell-padding-x !default;
+$table-header-cell-padding-y: $table-cell-padding-y !default;
+
+$table-title-font-size: 18px !default;
+$table-title-font-color: $secondary-font-color !default;
+$table-title-background-color: #f5f5f5 !default;
+
+$table-row-padding: 0 !default;
+
+
+.tkui-table{
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  overflow: hidden;
+  font-size: $table-font-size;
+  color: $table-font-color;
+  background-color: $table-background-color;
+
+  &.border{
+    border-left: 1px solid $table-border-color;
+    .tkui-table-row{
+      border-top: 1px solid $table-border-color;
+      .tkui-table-cell{
+        border-right: 1px solid $table-border-color;
+        border-bottom: 1px solid $table-border-color;
+      }
+    }
+  }
+
+  &.header-fixed{
+    thead .tkui-table-row{
+      display: block;
+      position: relative;
+      .tkui-table-cell{
+        width: 1000px;
+      }
+    }
+    tbody {
+      overflow-y: auto;
+      display: block;
+      width: 100%;
+      height: 100%;
+      .tkui-table-cell{
+        width: 1000px;
+      }
+    }
+  }
+
+  &.average .tkui-table-cell{
+    width: 1000px;
+  }
+
+  .tkui-table-row.border{
+    border-top: 1px solid $table-border-color;
+  }
+  .tkui-table-row .tkui-table-cell:first-child{
+    padding-left: $table-row-padding;
+  }
+  .tkui-table-row .tkui-table-cell:last-child{
+    padding-right: $table-row-padding;
+  }
+
+  .tkui-table-header{
+    font-weight: $table-header-font-weight;
+    background-color: $table-header-background-color;
+    font-size: $table-header-font-size;
+    color: $table-header-font-color;
+    .tkui-table-cell .tkui-table-cell-container{
+      padding-top: $table-header-cell-padding-y;
+      padding-bottom: $table-header-cell-padding-y;
+      padding-left: $table-header-cell-padding-x;
+      padding-right: $table-header-cell-padding-x;
+    }
+  }
+  .tkui-table-title{
+    font-size: $table-title-font-size;
+    color: $table-title-font-color;
+    background-color: $table-title-background-color;
+  }
+
+  .tkui-table-cell{
+    padding-right: 8px;
+  }
+
+  .tkui-table-body .tkui-table-row:hover,
+  .tkui-table-body .tkui-table-row:active{
+    background-color: $table-hover-background-color;
+    box-shadow:inset 0 0 0 1000px $table-hover-shadow;
+  }
+
+  &.middle .tkui-table-cell-container{
+    justify-content: center;
+  }
+  &.right .tkui-table-cell-container{
+    justify-content: flex-end;
+  }
+
+  .tkui-table-row.left .tkui-table-cell-container{
+    justify-content: flex-start;
+  }
+
+  .tkui-table-row.middle .tkui-table-cell-container{
+    justify-content: center;
+  }
+
+  .tkui-table-row.right .tkui-table-cell-container{
+    justify-content: flex-end;
+  }
+
+  .tkui-table-cell{
+    .tkui-table-cell-container{
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: $table-cell-padding-y;
+      padding-bottom: $table-cell-padding-y;
+      padding-left: $table-cell-padding-x;
+      padding-right: $table-cell-padding-x;
+    }
+    &.left .tkui-table-cell-container{
+      justify-content: flex-start !important;
+    }
+    &.middle .tkui-table-cell-container{
+      justify-content: center !important;
+    }
+    &.right .tkui-table-cell-container{
+      justify-content: flex-end !important;
+    }
+  }
+
+}

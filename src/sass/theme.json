@@ -1,0 +1,156 @@
+[
+  {
+    "name": "font-color",
+    "description": "正文字体颜色",
+    "type": "color",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "secondary-font-color",
+    "description": "副文字体颜色",
+    "type": "color",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "border-color",
+    "description": "边框颜色",
+    "type": "color",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "background-color",
+    "description": "页面背景色",
+    "type": "color",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "hover-color",
+    "description": "鼠标悬停时阴影颜色",
+    "type": "color",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "primary-color",
+    "description": "主色",
+    "type": "color",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "primary-color-dark",
+    "description": "主色暗",
+    "type": "color",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "primary-color-light",
+    "description": "主色亮",
+    "type": "color",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "accent-color",
+    "description": "衬色",
+    "type": "color",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "accent-color-dark",
+    "description": "衬色暗",
+    "type": "color",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "accent-color-light",
+    "description": "衬色亮",
+    "type": "color",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "danger-color",
+    "description": "警告色",
+    "type": "color",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "danger-color-dark",
+    "description": "警告色暗",
+    "type": "color",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "gutter",
+    "description": "元素间距",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "gutter-min",
+    "description": "小号元素间距",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "gutter-max",
+    "description": "大号元素间距",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "font-size",
+    "description": "正文字体大小",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "caption-font-size",
+    "description": "副文字体大小",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "title-font-size",
+    "description": "标题文字字体大小",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "headline-font-size",
+    "description": "大标题/全页标题字体大小",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "subhead-font-size",
+    "description": "副标题字体大小",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "icon-size",
+    "description": "图标大小",
+    "type": "size",
+    "inherit": [
+    ]
+  }
+]

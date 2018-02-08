@@ -1,0 +1,139 @@
+[
+  {
+    "name": "table-background-color",
+    "description": "表格背景颜色",
+    "type": "color",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "table-hover-background-color",
+    "description": "鼠标悬停时背景颜色",
+    "type": "color",
+    "inherit": [
+      "table-background-color"
+    ]
+  },
+  {
+    "name": "table-hover-shadow",
+    "description": "鼠标悬停时阴影颜色",
+    "type": "color",
+    "inherit": [
+      "hover-shadow"
+    ]
+  },
+  {
+    "name": "table-font-size",
+    "description": "表格字体大小",
+    "type": "size",
+    "inherit": [
+      "font-size"
+    ]
+  },
+  {
+    "name": "table-font-color",
+    "description": "表格字体颜色",
+    "type": "color",
+    "inherit": [
+      "font-color"
+    ]
+  },
+  {
+    "name": "table-cell-padding-x",
+    "description": "表格格子横向内边距",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "table-cell-padding-y",
+    "description": "表格格子纵向内边距",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "table-border-color",
+    "description": "表格边框颜色",
+    "type": "color",
+    "inherit": [
+      "border-color"
+    ]
+  },
+  {
+    "name": "table-header-background-color",
+    "description": "表格头部背景色",
+    "type": "color",
+    "inherit": [
+      "table-background-color"
+    ]
+  },
+  {
+    "name": "table-header-font-weight",
+    "description": "表格头部字体粗度",
+    "type": "int",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "table-header-font-size",
+    "description": "表格头部字体尺寸",
+    "type": "size",
+    "inherit": [
+      "table-font-size"
+    ]
+  },
+  {
+    "name": "table-header-font-color",
+    "description": "表格头部字体颜色",
+    "type": "color",
+    "inherit": [
+      "table-font-color"
+    ]
+  },
+  {
+    "name": "table-header-cell-padding-x",
+    "description": "表格头部单元格横向内边距",
+    "type": "size",
+    "inherit": [
+      "table-cell-padding-x"
+    ]
+  },
+  {
+    "name": "table-header-cell-padding-y",
+    "description": "表格头部单元格纵向内边距",
+    "type": "size",
+    "inherit": [
+      "table-cell-padding-y"
+    ]
+  },
+  {
+    "name": "table-title-font-size",
+    "description": "表格分段标题字体大小",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "table-title-font-color",
+    "description": "表格分段标题字体颜色",
+    "type": "color",
+    "inherit": [
+      "secondary-font-color"
+    ]
+  },
+  {
+    "name": "table-title-background-color",
+    "description": "表格分段标题背景色",
+    "type": "color",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "table-row-padding",
+    "description": "表格每列左右边距",
+    "type": "size",
+    "inherit": [
+    ]
+  }
+]

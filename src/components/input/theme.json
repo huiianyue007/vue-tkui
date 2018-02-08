@@ -1,0 +1,70 @@
+[
+  {
+    "name": "input-border-color",
+    "description": "输入框边框颜色",
+    "type": "color",
+    "inherit": [
+      "border-color"
+    ]
+  },
+  {
+    "name": "input-icon-color",
+    "description": "输入框图标颜色",
+    "type": "color",
+    "inherit": [
+      "font-color"
+    ]
+  },
+  {
+    "name": "input-gutter",
+    "description": "输入框内元素边距",
+    "type": "size",
+    "inherit": [
+      "gutter-max"
+    ]
+  },
+  {
+    "name": "input-padding-x",
+    "description": "输入框左右边距",
+    "type": "size",
+    "inherit": [
+      "gutter-max"
+    ]
+  },
+  {
+    "name": "input-padding-y",
+    "description": "输入框上下边距",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "label-width",
+    "description": "输入框标题宽度",
+    "type": "size",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "input-font-size",
+    "description": "输入框字体大小",
+    "type": "size",
+    "inherit": [
+      "font-size"
+    ]
+  },
+  {
+    "name": "label-font-weight",
+    "description": "输入框标题粗度",
+    "type": "number",
+    "inherit": [
+    ]
+  },
+  {
+    "name": "textarea-height",
+    "description": "多行文本输入框高度",
+    "type": "size",
+    "inherit": [
+    ]
+  }
+]

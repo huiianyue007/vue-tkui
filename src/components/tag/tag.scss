@@ -1,0 +1,82 @@
+@import '../../sass/variables';
+
+$tag-font-color: $font-color !default;
+$tag-color: #e3e3e3 !default;
+$tag-border-radius: 0 !default;
+$tag-gutter: $gutter !default;
+
+$tag-font-size: $font-size !default;
+$tag-min-width: 32px !default;
+$tag-padding-y: 4px !default;
+$tag-padding-x: 6px !default;
+
+$tag-font-size-small: $caption-font-size !default;
+$tag-min-width-small: 20px !default;
+$tag-padding-y-small: 2px !default;
+$tag-padding-x-small: 4px !default;
+
+$tag-font-size-big: $title-font-size !default;
+$tag-min-width-big: 48px !default;
+$tag-padding-y-big: 8px !default;
+$tag-padding-x-big: 12px !default;
+
+.tkui-tag{
+  vertical-align: middle;
+  text-align: center;
+  cursor: default;
+  max-width: 100%;
+  background: none;
+  border: 0;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  font-size: $tag-font-size;
+  border-radius: $tag-border-radius;
+  color: $tag-font-color;
+  background-color: $tag-color;
+  min-width: $tag-min-width;
+  padding-top: $tag-padding-y;
+  padding-bottom: $tag-padding-y;
+  padding-left: $tag-padding-x;
+  padding-right: $tag-padding-x;
+  margin: 4px $tag-gutter;
+
+  &+.tkui-tag{
+    margin-left:0;
+  }
+
+  &:hover{
+    box-shadow:inset 0 0 0 1000px rgba(0, 0 ,0 ,0.08);
+  }
+  &.small{
+    font-size: $tag-font-size-small;
+    min-width: $tag-min-width-small;
+    padding-top: $tag-padding-y-small;
+    padding-bottom: $tag-padding-y-small;
+    padding-left: $tag-padding-x-small;
+    padding-right: $tag-padding-x-small;
+  }
+  &.big{
+    font-size: $tag-font-size-big;
+    min-width: $tag-min-width-big;
+    padding-top: $tag-padding-y-big;
+    padding-bottom: $tag-padding-y-big;
+    padding-left: $tag-padding-x-big;
+    padding-right: $tag-padding-x-big;
+  }
+
+  &.primary{
+    background-color: $primary-color;
+    color: white;
+  }
+
+  &.accent{
+    background-color: $accent-color;
+    color: white;
+  }
+
+  &.danger{
+    background-color: $danger-color;
+    color: white;
+  }
+}

@@ -1,0 +1,74 @@
+@import '../../sass/variables';
+
+$list-height: 48px !default;
+$list-height-small: 40px !default;
+$list-height-big: 56px !default;
+$list-background-color: white !default;
+$list-hover-background-color: $list-background-color !default;
+$list-hover-shadow: $hover-shadow !default;
+$list-gutter: $gutter !default;
+$list-border-color: $border-color !default;
+
+$list-row-padding: 0 !default;
+$list-row-padding-y: 0 !default;
+
+.tkui-list{
+  background-color: $list-background-color;
+
+  &.top .tkui-list-item>div{
+    align-items: flex-start;
+  }
+
+  &.small .tkui-list-item{
+    min-height: $list-height-small;
+  }
+
+  &.big .tkui-list-item{
+    min-height: $list-height-big;
+  }
+
+  .tkui-list-item{
+    display: flex;
+    position: relative;
+    min-height: $list-height;
+    padding: 0 $list-row-padding;
+    transform: translate3D(0,0,0);
+    z-index: 1;
+
+    &:not(.disable-hover):hover{
+      background-color: $list-hover-background-color;
+      box-shadow:inset 0 0 0 1000px $list-hover-shadow;
+    }
+
+    &>div{
+      padding-top: $list-row-padding-y;
+      padding-bottom: $list-row-padding-y;
+      padding-right: $list-gutter;
+      display: flex;
+      align-items: center;
+      &:last-child{
+        padding-right: 0;
+      }
+    }
+    &>div+div{
+      padding-left: 0;
+    }
+
+    & .list-item-content{
+      flex:1;
+      overflow-x: hidden;
+    }
+    &.border{
+      border-bottom: 1px solid $list-border-color;
+    }
+    &.divider{
+      .list-item-content,
+      .right{
+        border-bottom: 1px solid $list-border-color;
+      }
+    }
+    &.border>div{
+      border-bottom: none;
+    }
+  }
+}

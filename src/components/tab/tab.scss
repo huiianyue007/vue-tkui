@@ -1,0 +1,71 @@
+@import '../../sass/variables';
+
+$easing-in-out: cubic-bezier(0.35, 0, 0.25, 1);
+$effect-duration: .3s;
+
+.tkui-tab-ink-bar {
+  position: absolute;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: $tab-bar-active-color;
+  text-align: center;
+
+  .tkui-tab-transition-forward {
+    transition: right $effect-duration $easing-in-out,
+    left $effect-duration $easing-in-out $effect-duration * 0.3;
+  }
+  .tkui-tab-transition-backward {
+    transition: right $effect-duration $easing-in-out $effect-duration * 0.3,
+    left $effect-duration $easing-in-out;
+  }
+}
+
+.tkui-tab {
+  display: flex;
+  background-color: #fff;
+  height: 44px;
+  position: relative;
+}
+.tkui-tab button {
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: 0 0;
+  appearance: none;
+}
+.tkui-tab .tkui-tab-item {
+  display: block;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, #e5e5e5, #e5e5e5, rgba(229, 229, 229, 0)) bottom left no-repeat;
+  background-size: 100% 1px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 44px;
+  color: $tab-text-default-color;
+}
+
+.tkui-tab .tkui-tab-item.tkui-tab-selected {
+  color: $tab-text-active-color;
+  border-bottom: 3px solid $tab-text-active-color;
+}
+
+.tkui-tab .tkui-tab-item.tkui-tab-disabled {
+  color: $tab-text-disabled-color;
+}
+
+.tkui-tab.tkui-tab-no-animate .tkui-tab-item.tkui-tab-selected {
+  background: 0 0;
+}
+
+/** when=prop:custom-bar-width **/
+.tkui-tab-bar-inner {
+  display: block;
+  background-color: $tab-text-active-color;
+  margin: auto;
+  height: 100%;
+  transition: width 0.3s $easing-in-out;
+}

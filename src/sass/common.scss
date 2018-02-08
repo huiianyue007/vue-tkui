@@ -1,0 +1,62 @@
+@import "./variables";
+
+.tkui {
+  background-color: $background-color;
+  font-size: $font-size;
+  color: $font-color;
+}
+
+.caption{
+  font-size: $caption-font-size;
+  color: $secondary-font-color;
+}
+
+.title{
+  font-size: $title-font-size;
+  font-weight: 600;
+}
+
+.secondary{
+  color: $secondary-font-color !important;
+}
+
+.headline{
+  font-size: $headline-font-size;
+  font-weight: 600;
+}
+
+.subhead{
+  font-size: $subhead-font-size;
+}
+
+.primary{
+  color: $primary-color;
+}
+.primary-background{
+  background-color: $primary-color;
+}
+
+.accent{
+  color: $accent-color;
+}
+.accent-background{
+  background-color: $accent-color;
+}
+
+.danger{
+  color: $danger-color;
+}
+
+.tk-icon{
+  width: $icon-size;
+  height: $icon-size;
+  &.small{
+    width: $icon-size-small;
+    height: $icon-size-small;
+  }
+  &.big{
+    width: $icon-size-big;
+    height: $icon-size-big;
+  }
+}
+
